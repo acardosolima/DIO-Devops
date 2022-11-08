@@ -10,11 +10,11 @@ groupadd GRP_VEN
 groupadd GRP_SEC
 
 chmod 777 publico
-chmod 700 adm
+chmod 770 adm
 chown :GRP_ADM adm/
-chmod 700 ven
+chmod 770 ven
 chown :GRP_VEN ven/
-chmod 700 sec
+chmod 770 sec
 chown :GRP_SEC sec/
 
 useradd -g GRP_ADM -m -p $(openssl passwd password) -s /bin/bash carlos
